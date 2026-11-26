@@ -2,8 +2,8 @@
 
 An independently usable TCP client mod for Cyberpunk 2077, maintained by
 DeepBide from Louis Poirier's MIT-licensed RedSocket v0.5.0.
-Version **0.5.2-rc.3** — first public release candidate for Windows x64,
-with scoped in-game validation on Cyberpunk 2077 2.5. Not a stable release.
+Version **0.5.2** — stable release for Windows x64,
+with scoped in-game validation on Cyberpunk 2077 2.5.
 See the tested pairing and limitations in [RELEASE.md](RELEASE.md).
 
 ## Acknowledgments
@@ -56,8 +56,7 @@ receiving application.
   commands as data, never as instructions to execute.
 - Cleanup has a diagnostic wait, not a guaranteed hard deadline. Ordinary
   game shutdown was observed successfully on the tested pairing. Dynamic,
-  forced or reentrant DLL unload is unsupported. Extended gameplay and
-  resource soak have not been qualified.
+  forced or reentrant DLL unload is unsupported. Short attended gameplay was tested; prolonged resource soak is not claimed.
 
 ## CET API
 
@@ -123,3 +122,5 @@ licenses/.
 MIT, with the original copyright (c) 2025 Louis Poirier preserved, and
 copyright (c) 2026 DeepBide for our modifications. See [LICENSE](LICENSE).
 Other components retain their own licenses and authorship.
+
+The stable distribution retains the byte-identical 0.5.2-rc.3 runtime build, API token and startup identity. These refer to the exact binary and bridges, not the distribution channel.

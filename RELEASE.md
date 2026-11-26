@@ -1,6 +1,6 @@
-# DeepBide-RedSocket 0.5.2-rc.3
+# DeepBide-RedSocket 0.5.2
 
-**Release candidate / pre-release.** Windows x64. This is a maintained
+**Stable release.** Windows x64. This is a maintained
 fork of RedSocket, not a new wire protocol or an official endorsement.
 
 ## Requirements — exact tested environment
@@ -75,6 +75,15 @@ errors in the witness. Normal game exit completed terminal plugin cleanup
 and the loader explicitly reported unload. The four runtime files were
 restored to their exact preimages afterward.
 
+Later on 26 November, an attended gameplay trial with Telemetry 1.0.0
+used the exact same DLL and bridges. The bounded witness accepted 1,682
+frames, with no invalid frames, rejections or transport errors during
+reception. Controlled EOF recovered in 5.032 s; a separate HUD connection
+answered a challenge. Ordinary save reload recovered both connections.
+After the receiver timebox ended, eight expected connection-failure
+warnings occurred until game exit. Terminal cleanup and loader unload
+were observed, and the original files were restored.
+
 This is scoped transport/ordinary-shutdown evidence, not validation of
 the consumers' gameplay data or visual output. No comparative gameplay
 FPS, prolonged soak, exhaustive allocator/host-thread-affinity coverage or
@@ -101,3 +110,5 @@ See BUILD.md and THIRD_PARTY.md.
 Our sincere thanks to Louis Poirier (rayshader), RED4ext/SDK, RedLib, Asio,
 nameof, CET, redscript, Xmake and the other creators, maintainers and
 communities recognized in THIRD_PARTY.md. Their work makes this fork possible.
+
+Distribution version 0.5.2 intentionally retains the runtime build identity 0.5.2-rc.3 and the unchanged four runtime members. No version-only rebuild or runtime API change. Consumers pinned to the previous API token remain compatible.

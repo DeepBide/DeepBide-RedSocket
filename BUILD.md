@@ -1,6 +1,6 @@
 # Build DeepBide-RedSocket in an isolated directory
 
-This builds the 0.5.2-rc.3 release candidate. Windows x64,
+This builds the frozen 0.5.2-rc.3 runtime used for the 0.5.2 stable distribution. Windows x64,
 Visual Studio 2022 C++ tools, xmake 3.1.2, Git and an independent output
 directory are needed. No installer hooks or game files are used.
 

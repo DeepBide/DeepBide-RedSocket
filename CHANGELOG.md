@@ -1,5 +1,11 @@
 # DeepBide-RedSocket changelog
 
+## 0.5.2 — 2026-11-26 (stable)
+
+- Stable distribution with byte-identical RC3 binary, bridges and build inputs.
+- Attended gameplay, controlled reconnect, reload and ordinary shutdown validated with Telemetry 1.0.0.
+- Retains 0.5.2-rc.3 runtime token for exact compatibility. See RELEASE.md for scope and limits.
+
 ## 0.5.2-rc.3 — 2026-11-26 — first public release candidate
 
 Forked from RedSocket v0.5.0 by Louis Poirier (rayshader). The changes below

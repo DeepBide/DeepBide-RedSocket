@@ -7,11 +7,11 @@
   "build_input_scope": "all source archive members except README.md, BUILD.md, RELEASE.md, THIRD_PARTY.md, CHANGELOG.md and release-manifest.json",
   "build_input_sha256": "a7791a91fa7938d41d5ec40b026084d354a718cce7e18d86c058d8811e889437",
   "files": {
-    "BUILD.md": "72ac17c773805ad8df2f760e5debba681a9a11d3192fd60a3a428755ed375459",
-    "CHANGELOG.md": "89f2765f5b2b70f933343fbb77fecc54851dea617765500723a0e8d9af105d35",
+    "BUILD.md": "61468ebd55f3b853db829b7733235c3db587ae7d846a3e4a06a49eb490ed5e6d",
+    "CHANGELOG.md": "f4d9b4ff7915bde1fbad6153ddfafa931f19b3d7a44522876a939dc4e6c6af75",
     "LICENSE": "42e1a52da2badec717afa5541534174a72726592e17f42b0dda58ee1ff497009",
-    "README.md": "435ecd1cbae1aba001ae0450ebb163da82ca40228a9741b2b4eda696274998f6",
-    "RELEASE.md": "f488578579fd60e4e86978ca4a6a4aa38e6b11402ca644b9c06459e9c5c1f024",
+    "README.md": "b8a434c2b7537d4b25c03694d342922a20a870cefb2c5b70b7af2ae7b5030ecd",
+    "RELEASE.md": "b6d7f73dcf583640c4dfbc9556dab0cac50d5db3301032f6e4349d55c5b18102",
     "THIRD_PARTY.md": "7453817e1e18ea84b2bd0e1c2babbfa8da2296772d2ec6a59aad2358c0592b4f",
     "licenses/Asio-COPYING": "5cc69ca9afd3417ed8e58bcd9c0bb730375e9e3e92b5aaf6483b93a2837e0cac",
     "licenses/Asio-LICENSE_1_0.txt": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
@@ -60,7 +60,8 @@
   },
   "kind": "source",
   "product": "DeepBide-RedSocket",
-  "release_channel": "prerelease",
+  "release_channel": "stable",
+  "runtime_build_id": "0.5.2-rc.3",
   "runtime_versions": {
     "CET": "1.38.1",
     "Cyberpunk 2077": "2.5 / 3.0.88.46235",
@@ -73,9 +74,9 @@
     "scripts/cet/init.lua": "bin/x64/plugins/cyber_engine_tweaks/mods/RedSocket/init.lua",
     "scripts/redscript/RedSocket.reds": "r6/scripts/RedSocket.reds"
   },
-  "source_tree_sha256": "68a997afd50e64f9887f60800ab74acdf6db8a088cf2324e7e045ee44fef5d65",
+  "source_tree_sha256": "61de6bba44eb0e7c7f04256429cd0695009b4db74a17fca63e10fc3749b570bc",
   "tested_dll_sha256": "40c76ec43cf56f16ca40d7441e8bdd108d1794b4d52cca00110b57328ec9a245",
   "upstream": "055420a7317cb6e318251ed168eefad10fb1ea5b",
-  "validation": "scoped transport, reconnect, normal loader shutdown and rollback; no gameplay FPS or soak claim",
-  "version": "0.5.2-rc.3"
+  "validation": "SCOPED_PHYSICAL_TRANSPORT_AND_GAMEPLAY_PAIRING_2026_11_26",
+  "version": "0.5.2"
 }
